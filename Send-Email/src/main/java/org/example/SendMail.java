@@ -11,14 +11,14 @@ public class SendMail {
     public static void SendEmail(String To, String Subject, String Body)
     {
         // Email Credentials
-        final String username = "your_email@example.com";
-        final String password = "password";
+        final String username = "your-email@example.com";
+        final String password = "your-password";
 
         // Set properties for the email
         Properties properties = new Properties();
         properties.put("mail.smtp.auth", "true");
         properties.put("mail.smtp.starttls.enable", "true");
-        properties.put("mail.smtp.host", "your_smtp_host.com");
+        properties.put("mail.smtp.host", "smtp.host.com");
         properties.put("mail.smtp.port", "587");
 
         // Create a session with an Authenticator
